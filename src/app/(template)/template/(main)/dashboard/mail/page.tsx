@@ -15,13 +15,13 @@ export default function Page() {
           </p>
         </div>
         <Button asChild variant="ghost" size="icon-sm">
-          <Link href="/mail" target="_blank" rel="noreferrer" aria-label="Open mail in new tab">
+          <Link href="/template/mail" target="_blank" rel="noreferrer" aria-label="Open mail in new tab">
             <ExternalLink />
           </Link>
         </Button>
       </div>
 
-      <iframe src="/mail" title="Mail preview" className="min-h-0 flex-1 rounded-lg border bg-background" />
+      <iframe src="/template/mail" title="Mail preview" className="min-h-0 flex-1 rounded-lg border bg-background" />
     </div>
   );
 }
