@@ -3,9 +3,11 @@ import {
   Calendar,
   ChartBar,
   Fingerprint,
+  FolderOpen,
   Forklift,
   Gauge,
   GraduationCap,
+  HeartPulse,
   Kanban,
   LayoutDashboard,
   ListTodo,
@@ -17,6 +19,7 @@ import {
   Server,
   ShoppingBag,
   SquareArrowUpRight,
+  UserRound,
   Users,
 } from "lucide-react";
 
@@ -118,6 +121,20 @@ export const sidebarItems: NavGroup[] = [
         icon: Server,
         badge: "new",
       },
+      {
+        id: "file-manager",
+        title: "File Manager",
+        url: "/template/dashboard/file-manager",
+        icon: FolderOpen,
+        badge: "new",
+      },
+      {
+        id: "patient-monitoring",
+        title: "Patient Monitoring",
+        url: "/template/dashboard/patient-monitoring",
+        icon: HeartPulse,
+        badge: "new",
+      },
     ],
   },
   {
@@ -153,6 +170,13 @@ export const sidebarItems: NavGroup[] = [
         title: "Invoice",
         url: "/template/dashboard/invoice",
         icon: ReceiptText,
+      },
+      {
+        id: "profile",
+        title: "Profile",
+        url: "/template/dashboard/profile",
+        icon: UserRound,
+        badge: "new",
       },
       {
         id: "users",
