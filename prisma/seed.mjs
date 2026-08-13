@@ -53,7 +53,7 @@ const pool = mariadb.createPool({
 try {
   const conn = await pool.getConnection();
   await conn.batch(
-    "INSERT IGNORE INTO `user` (id, name, username, email, avatar, role, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+    "INSERT IGNORE INTO `User` (id, name, username, email, avatar, role, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
     rows,
   );
   const [{ total }] = await conn.query("SELECT COUNT(*) AS total FROM `user`");
